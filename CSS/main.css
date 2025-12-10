@@ -11,8 +11,22 @@ p {
 }
 
 div {
-    height: 800px;
-    width: 600px;
+    height: 600px;
+    width: 800px;
     margin: 0 auto;
     text-align: left;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0
+    height: 70px;
+    width: 100%;
+    background-color: #a9a2a0;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    color: #000000;
+    font-family: Arial, sans-serif;
 }
