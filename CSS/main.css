@@ -9,3 +9,10 @@ p {
     padding: 20px;
     text-align: center;
 }
+
+div {
+    height: 800px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
