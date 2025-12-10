@@ -57,3 +57,22 @@ nav a {
     float: left;
     margin-right: 20px;
 }
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.left-side {
+    width: 50%;
+    padding: 40px;
+}
+
+.right-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
