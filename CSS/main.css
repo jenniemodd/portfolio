@@ -44,3 +44,10 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
+nav a {
+    font-family: arian, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color:black
+}
