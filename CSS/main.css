@@ -51,3 +51,9 @@ nav a {
     font-weight: bold;
     color:black
 }
+
+.left-pic {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
