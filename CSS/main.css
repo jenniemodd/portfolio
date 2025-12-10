@@ -69,4 +69,8 @@ nav a {
     display: block;
     object-fit: cover;
 }
+body {
+    background-color: #ddd4d2;
+    margin: 0;
+}
 
