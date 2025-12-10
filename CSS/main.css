@@ -3,3 +3,9 @@ p {
     color: #000000;
     font-family: Arial, sans-serif;
 }
+
+#main-header {
+    background-color: #ddd4d2;
+    padding: 20px;
+    text-align: center;
+}
