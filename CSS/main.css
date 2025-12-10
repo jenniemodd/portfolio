@@ -18,17 +18,11 @@ div {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 70px;
     width: 100%;
-    background-color: #a9a2a0;
+    height: 70px;
+    background-color: #ddd4d2;
     text-align: center;
     padding: 10px;
-    font-size: small;
-    color: #000000;
-    font-family: Arial, sans-serif;
 }
 
 .menu-container {
