@@ -56,12 +56,17 @@ nav a {
     padding: 40px;
 }
 
+.right-side {
+    width: 50%;
+}
+
 .right-side img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
+
 body {
     background-color: #ddd4d2;
     margin: 0;
