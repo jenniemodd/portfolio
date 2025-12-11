@@ -91,3 +91,52 @@ h2 {
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
 }
+
+.bio-section {
+    padding: 80px 0;
+    background-color: #fffbfa;  /* samma färg som resten av sidan */
+}
+
+.bio-container {
+    display: flex;
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bio-left {
+    width: 40%;
+}
+
+.bio-left h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.bio-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.bio-right {
+    width: 60%;
+}
+
+.bio-right h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.bio-right p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
