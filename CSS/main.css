@@ -19,7 +19,7 @@ footer {
 
 .menu-container {
     display: flex;
-    margin-top: 0;
+    justify-content: center;
 }
 
 nav ul {
