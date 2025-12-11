@@ -92,6 +92,11 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h3 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .bio-section {
     padding: 80px 0;
     background-color: #fffbfa;  /* samma färg som resten av sidan */
