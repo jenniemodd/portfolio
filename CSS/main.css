@@ -17,26 +17,6 @@ footer {
     padding: 10px;
 }
 
-.menu-container {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    font-family: Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
-    color:black
-}
-
 .hero-container {
     display: flex;
     align-items: center;
@@ -68,23 +48,30 @@ h1 {
 }
 
 header {
+    width: 100%;
     display: flex;
-    justify-content: center
-    padding-top: 40px;
+    justify-content: center;  /* centrera menyn */
+    align-items: center;
+    padding: 20px 0;          /* flytta ner menyn så den inte sitter i taket */
 }
 
-.top-menu ul {
+.menu-container {
+    display: flex;
+    justify-content: center;  /* extra säker centrering */
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    gap: 60px;
-    margin: 0;
+    gap: 30px;
     padding: 0;
+    margin: 0;
 }
 
-.top-menu a {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
+nav a {
     text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
     color: black;
 }
