@@ -19,8 +19,7 @@ footer {
 
 .menu-container {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 nav ul {
@@ -69,6 +68,23 @@ h1 {
 }
 
 header {
+    display: flex;
+    justify-content: center
+    padding-top: 40px;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
     margin: 0;
     padding: 0;
+}
+
+.top-menu a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
 }
