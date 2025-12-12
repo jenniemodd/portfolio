@@ -288,3 +288,42 @@ h3 {
 .info-box h3 {
     margin-top: 0;
 }
+
+@media (max-width: 768px) {
+
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right-side img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
