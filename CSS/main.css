@@ -117,9 +117,8 @@ h3 {
 
 .bio-container {
     display: flex;
-    gap: 60px;
-    width: 100%;
-    max-width: 1200px;
+    gap: 0;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -384,7 +383,6 @@ h3 {
     }
 }
 
-/* Small utility: ensure form elements are responsive */
 form input[type="text"],
 form input[type="email"],
 form textarea,
