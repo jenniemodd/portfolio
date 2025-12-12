@@ -361,6 +361,25 @@ h3 {
         margin: 0 auto;
     }
 
+ .work-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right-side img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+
+}
 
 }
 
