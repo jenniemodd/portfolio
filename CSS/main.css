@@ -4,6 +4,16 @@ p {
     font-family:'Montserrat', sans-serif;
 }
 
+/* Responsive defaults */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 main {
     background-color: #ddd4d2;
     padding: 20px;
@@ -26,7 +36,7 @@ footer {
 
 .left-side {
     width: 50%;
-    padding: 80 px 60px;
+    padding: 80px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,18 +93,21 @@ nav a {
 }
 
 h1 {
-    font-size: 100px;
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: clamp(28px, 8vw, 100px);
+    line-height: 1.05;
 }
 
 h2 {
-    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
+    font-size: clamp(18px, 2.5vw, 28px);
 }
 
 h3 {
-    font-size: 20px;
+h3 {
     font-family: 'Montserrat', sans-serif;
+    font-size: clamp(14px, 1.6vw, 20px);
 }
 
 .bio-section {
@@ -108,6 +121,16 @@ h3 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Make common containers wrap/stack on smaller viewports */
+@media (max-width: 1024px) {
+    .bio-container,
+    .work-container,
+    .portfolio-container,
+    .contact-container {
+        gap: 40px;
+    }
 }
 
 .bio-left {
@@ -317,6 +340,11 @@ h3 {
         font-size: 14px;
     }
 
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
  .bio-container {
         flex-direction: column;
         align-items: center;
@@ -345,4 +373,22 @@ h3 {
     p {
         font-size: 14px;
     }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-box {
+        max-width: 90%;
+    }
+}
+
+/* Small utility: ensure form elements are responsive */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    max-width: 100%;
 }
