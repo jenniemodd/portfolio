@@ -76,9 +76,9 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: medium;
-    font-weight: bold;
+    font-weight: lighter;
     color: black;
 }
 
