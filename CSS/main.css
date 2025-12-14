@@ -106,10 +106,10 @@ h3 {
 
 .bio-container {
     display: flex;
-    gap: 0;
-    max-width: 100%;
+    gap: 60px;
+    max-width: 1200px;
     margin: 0 auto;
-    justify-content: center;
+    align-items: center;
 }
 
 .bio-left {
