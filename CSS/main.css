@@ -63,6 +63,7 @@ header {
 .menu-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 nav ul {
