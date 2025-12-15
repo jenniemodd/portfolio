@@ -67,6 +67,10 @@ header {
     margin-bottom: 10px;
 }
 
+.menu-container p {
+    text-transform: uppercase;
+}
+
 nav ul {
     list-style: none;
     display: flex;
