@@ -186,9 +186,11 @@ h3 {
 
 .work-left img {
     width: 100%;
-    height: auto;
     display: block;
     border-radius: 4px;
+    height: 400px;
+    width: 300px;
+
 }
 
 .work-right {
