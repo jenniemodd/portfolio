@@ -46,6 +46,8 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
+    width: 400px;
+    height: 500px;
 }
 
 body {
