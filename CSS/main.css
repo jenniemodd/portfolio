@@ -166,8 +166,8 @@ h3 {
     display: flex;
     gap: 60px;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
     margin-bottom: 100px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -222,6 +222,12 @@ h3 {
     box-sizing: border-box;
     padding-top: 20px;
 }
+
+.portfolio-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
 
 .portfolio-left {
     width: 40%;
