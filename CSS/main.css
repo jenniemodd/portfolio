@@ -99,11 +99,13 @@ h1 {
 h2 {
     font-size: 1.5625rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
 h3 {
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
 .bio-section {
