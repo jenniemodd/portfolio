@@ -219,6 +219,8 @@ h3 {
     margin: 0 auto;
     margin-bottom: 100px;
     background-color: #ffffff;
+    box-sizing: border-box;
+    padding-top; 20px;
 }
 
 .portfolio-left {
