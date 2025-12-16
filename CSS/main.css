@@ -245,6 +245,8 @@ h3 {
     height: auto;
     display: block;
     border-radius: 4px;
+    width: 600px;
+    height: 800px;
 }
 
 .portfolio-right {
