@@ -4,6 +4,12 @@ p {
     font-family:'Montserrat', sans-serif;
 }
 
+li {
+    font-size: 1rem;
+    color: #000000;
+    font-family:'Montserrat', sans-serif;
+}
+
 main {
     background-color: #f6f6f6;
     padding: 20px;
