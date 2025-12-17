@@ -332,6 +332,17 @@ h4 {
     margin-bottom: 20px;
 }
 
+.contact-info {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .info-box {
     background-color: white;
     padding: 30px;
