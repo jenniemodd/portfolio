@@ -374,7 +374,13 @@ label {
     label span {
         width: 80px;
     }
-    
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
 
 
