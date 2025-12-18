@@ -366,18 +366,28 @@ h4 {
 }
 
 label {
-    display: block;
-    margin-bottom: 16px;
-    font-weight: bold;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 label span {
-    position: absolute;
-        top: 4px;
-        left: 4px;
-    }
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 fieldset {
   border: 0;
@@ -390,6 +400,11 @@ legend {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
+
+form {
+  max-width: 400px;
+}
+
 
 @media (max-width: 768px) {
 
