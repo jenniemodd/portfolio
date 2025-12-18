@@ -406,6 +406,14 @@ form {
   max-width: 400px;
 }
 
+.checkbox-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
 
 @media (max-width: 768px) {
 
