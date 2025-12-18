@@ -32,7 +32,7 @@ footer {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
-    margin-bottom: 50 px;
+    margin-bottom: 50px;
 }
 
 .hero-container {
@@ -149,7 +149,7 @@ h4 {
 }
 
 .bio-left h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -169,14 +169,14 @@ h4 {
 }
 
 .bio-right h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .bio-right p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     max-width: 500px;
     margin-bottom: 20px;
@@ -198,7 +198,7 @@ h4 {
 }
 
 .work-left h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -218,14 +218,14 @@ h4 {
 }
 
 .work-right h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .work-right p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     max-width: 500px;
     margin-bottom: 20px;
@@ -254,7 +254,7 @@ h4 {
 }
 
 .portfolio-left h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -273,14 +273,14 @@ h4 {
 }
 
 .portfolio-right h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .portfolio-right p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     max-width: 500px;
     margin-bottom: 20px;
@@ -299,7 +299,7 @@ h4 {
 }
 
 .contact-left h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -319,14 +319,14 @@ h4 {
 }
 
 .contact-right h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .contact-right p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     max-width: 500px;
     margin-bottom: 20px;
@@ -396,9 +396,10 @@ fieldset {
 }
 
 legend {
-    font-size: 1 rem;
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
 }
 
 form {
