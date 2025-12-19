@@ -17,8 +17,9 @@ Syftet med projektet är att visa att jag förstår webbsidans uppbyggnad, seman
 
 <h2>Innehåll & funktionalitet</h2>
 
-<p>Portfolion uppfyller följande krav:
-•	En bild med attribut och alt-text
+<p>Portfolion uppfyller följande krav:</p>
+<ul>
+<li>En bild med attribut och alt-text</li></ul>
 •	En navigationsmeny som länkar till olika sektioner på samma sida
 •	En huvudsektion (main) som innehåller sidans huvudsakliga innehåll
 •	Tre projekt (två sedan innan och en ”dummie” enligt kravspecifikationen.
