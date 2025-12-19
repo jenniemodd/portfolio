@@ -20,10 +20,10 @@ Syftet med projektet är att visa att jag förstår webbsidans uppbyggnad, seman
 <p>Portfolion uppfyller följande krav:
 •	En bild med attribut och alt-text
 •	En navigationsmeny som länkar till olika sektioner på samma sida
-•	En huvudsektion (<main>) som innehåller sidans huvudsakliga innehåll
+•	En huvudsektion (main) som innehåller sidans huvudsakliga innehåll
 •	Tre projekt (två sedan innan och en ”dummie” enligt kravspecifikationen.
-•	Ett sidofält (<aside>) med kompletterande information
-•	Rubriker i minst tre nivåer (<h1>, <h2>, <h3>)
+•	Ett sidofält (aside) med kompletterande information
+•	Rubriker i minst tre nivåer (h1, h2, h3)
 •	Minst en länk till en extern webbplats
 •	Responsiv design som fungerar på mobil, surfplatta och desktop
 •	Ett kontaktformulär med:
@@ -36,7 +36,7 @@ o	Checkbox
 o	Textfält (textarea)
 o	Skicka-knapp (formuläret är inte kopplat till någon funktionalitet)
 •	Kontaktuppgifter till mig
-•	En sidfot (<footer>)
+•	En sidfot (footer)
 🛠️ Tekniker som används
 •	HTML5
 •	CSS3
