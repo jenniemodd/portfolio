@@ -105,6 +105,10 @@ nav a {
     color: black;
 }
 
+nav a:hover {
+    color:grey
+}
+
 h1 {
     font-size: 6.25rem;
     font-family: 'Montserrat', sans-serif;
