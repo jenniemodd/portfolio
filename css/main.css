@@ -27,12 +27,9 @@ main {
 
 footer {
     width: 100%;
-    max-height: 100px;
     background-color: #f6f6f6;
     text-align: center;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20 px;
+    padding: 20px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
@@ -64,6 +61,7 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
+}
 
 body {
     background-color: #f6f6f6;
@@ -311,8 +309,7 @@ h4 {
     height: auto;
     display: block;
     border-radius: 4px;
-    width: 400px;
-    height: 300px;
+    max-width: 400px;
 }
 
 .contact-right {
@@ -487,11 +484,6 @@ form {
         height: auto;
     }
 }
-
-
-
-}
-
 
 @media (max-width: 480px) {
 
