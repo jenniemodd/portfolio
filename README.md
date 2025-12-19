@@ -22,7 +22,7 @@ Syftet med projektet är att visa att jag förstår webbsidans uppbyggnad, seman
 •	En bild med attribut och alt-text
 •	En navigationsmeny som länkar till olika sektioner på samma sida
 •	En huvudsektion (main) som innehåller sidans huvudsakliga innehåll
-•	Tre projekt (två sedan innan och en ”dummie” enligt kravspecifikationen.
+•	Tre projekt (två sedan innan och en ”dummie” enligt kravspecifikationen.)
 •	Ett sidofält (aside) med kompletterande information
 •	Rubriker i minst tre nivåer (h1, h2, h3)
 •	Minst en länk till en extern webbplats
