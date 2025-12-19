@@ -417,7 +417,8 @@ form {
 
 .contact-info a {
     text-decoration: none;
-    font-weight: bold;
+    font-style: italic;
+    color: rgb(46, 32, 134)
 }
 
 .contact-info a:hover {
