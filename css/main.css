@@ -152,7 +152,7 @@ h4 {
     width: 40%;
 }
 
-.bio-left h3 {
+.bio-left h2 {
     font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
@@ -172,7 +172,7 @@ h4 {
     flex-direction: column;
 }
 
-.bio-right h2 {
+.bio-right h3 {
     font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
@@ -201,7 +201,7 @@ h4 {
     width: 40%;
 }
 
-.work-left h3 {
+.work-left h2 {
     font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
@@ -221,7 +221,7 @@ h4 {
     width: 60%;
 }
 
-.work-right h2 {
+.work-right h3 {
     font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
@@ -257,7 +257,7 @@ h4 {
     width: 40%;
 }
 
-.portfolio-left h3 {
+.portfolio-left h2 {
     font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
@@ -276,7 +276,7 @@ h4 {
     width: 60%;
 }
 
-.portfolio-right h2 {
+.portfolio-right h3 {
     font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
@@ -302,7 +302,7 @@ h4 {
     width: 40%;
 }
 
-.contact-left h3 {
+.contact-left h2 {
     font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 600;
@@ -322,7 +322,7 @@ h4 {
     width: 60%;
 }
 
-.contact-right h2 {
+.contact-right h3 {
     font-size: 1.5625rem;
     line-height: 1.3;
     margin-bottom: 20px;
