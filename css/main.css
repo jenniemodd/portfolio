@@ -520,8 +520,8 @@ form {
         margin: 0 auto;
     }
 
-    ul li {
-        justify-content: left;
+    section ul {
+        text-align: left;
     }
 
 
