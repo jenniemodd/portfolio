@@ -64,9 +64,6 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
-    width: 600px;
-    height: 800px;
-}
 
 body {
     background-color: #f6f6f6;
@@ -212,10 +209,8 @@ h4 {
 .work-left img {
     width: 100%;
     display: block;
+    height: auto;
     border-radius: 4px;
-    height: 400px;
-    width: 300px;
-
 }
 
 .work-right {
@@ -476,13 +471,24 @@ form {
         text-align: left;
     }
 
+    .hero-container img {
+        max-width: 100%;
+    }
+
+    .work-container img,
+    .portfolio-container img,
+    .contact-container img {
+        max-width: 90%;
+    }
 
     img {
         display: block;
         margin: 0 auto;
-        max-width: 90%;
         height: auto;
     }
+}
+
+
 
 }
 
