@@ -432,17 +432,6 @@ form {
         text-align: center;
     }
 
-    .left-side,
-    .right-side {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .right-side img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
     nav ul {
         gap: 15px;
     }
@@ -457,17 +446,6 @@ form {
         text-align: center;
     }
 
-    .left-side,
-    .right-side {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .right-side img {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-    }
 
     .work-container {
         flex-direction: column;
@@ -475,32 +453,11 @@ form {
         text-align: center;
     }
 
-    .left-side,
-    .right-side {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .right-side img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
 
     .portfolio-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .left-side,
-    .right-side {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .right-side img {
-        max-width: 80%;
-        margin: 0 auto;
     }
 
     .contact-container {
@@ -515,17 +472,20 @@ form {
         padding: 20px;
     }
 
-    .right-side img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
     section ul {
         text-align: left;
     }
 
 
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        height: auto;
+    }
+
 }
+
 
 @media (max-width: 480px) {
 
