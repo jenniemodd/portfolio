@@ -1,0 +1,27 @@
+{
+  "name": "fed25d-html-css-inl-1-portfolio-jenniemodd",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Eq_Hqwjl) # Inlämningsuppgift Här är repot för din inlämningsuppgift.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Medieinstitutet/fed25d-html-css-inl-1-portfolio-jenniemodd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Medieinstitutet/fed25d-html-css-inl-1-portfolio-jenniemodd/issues"
+  },
+  "homepage": "https://github.com/Medieinstitutet/fed25d-html-css-inl-1-portfolio-jenniemodd#readme",
+  "devDependencies": {
+    "vite": "^8.0.8"
+  }
+}
