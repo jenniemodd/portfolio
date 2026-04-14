@@ -1,40 +1,109 @@
+// ===== MODAL ELEMENT =====
 const modal = document.getElementById("project-modal") as HTMLElement;
 const title = document.getElementById("modal-title") as HTMLElement;
 const description = document.getElementById("modal-description") as HTMLElement;
 const tech = document.getElementById("modal-tech") as HTMLElement;
 const liveLink = document.getElementById("modal-live") as HTMLAnchorElement;
 const githubLink = document.getElementById("modal-github") as HTMLAnchorElement;
-
-const cards = document.querySelectorAll(".project-card");
 const closeBtn = document.querySelector(".close") as HTMLElement;
+
+// ===== PROJECT CARDS =====
+const cards = document.querySelectorAll(".project-card");
 
 cards.forEach((card) => {
   card.addEventListener("click", () => {
-    const element = card as HTMLElement;
+    const el = card as HTMLElement;
 
-    title.innerText = element.dataset.title!;
-    description.innerText = element.dataset.description!;
-    tech.innerText = element.dataset.tech!;
+    title.textContent = el.dataset.title || "";
+    description.textContent = el.dataset.description || "";
+    tech.textContent = el.dataset.tech || "";
 
-    liveLink.href = element.dataset.live!;
-    githubLink.href = element.dataset.github!;
+    // Live länk (visa/dölj)
+    if (el.dataset.live) {
+      liveLink.href = el.dataset.live;
+      liveLink.style.display = "inline-block";
+    } else {
+      liveLink.style.display = "none";
+    }
+
+    // GitHub länk
+    githubLink.href = el.dataset.github || "#";
 
     modal.style.display = "flex";
-
-    if (element.dataset.live) {
-  liveLink.href = element.dataset.live;
-  liveLink.style.display = "inline-block";
-} else {
-  liveLink.style.display = "none";
-}
-
   });
 });
 
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
+// ===== CLOSE MODAL =====
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
+
+// ===== HERO FADE-IN =====
+const hero = document.querySelector(".hero-container");
+
+window.addEventListener("load", () => {
+  hero?.classList.add("visible");
 });
 
+// ===== PARALLAX (optional, kan tas bort om du vill) =====
+const heroImage = document.querySelector(".right-side img") as HTMLElement;
 
+if (heroImage) {
+  document.addEventListener("mousemove", (e) => {
+    const x = (e.clientX / window.innerWidth) * 10;
+    const y = (e.clientY / window.innerHeight) * 10;
 
+    heroImage.style.transform = `translate(${x}px, ${y}px)`;
+  });
+}
 
+// ===== TYPING EFFECT =====
+const typingText = document.getElementById("typing-text") as HTMLElement;
+
+const introText =
+  "Friluftsälskande norrlänning som drivs av att skapa digitala upplevelser – där webb, innehåll, strategi och resultat möts.";
+
+let typingIndex = 0;
+
+function typeEffect() {
+  if (!typingText) return;
+
+  typingText.textContent = introText.slice(0, typingIndex);
+  typingIndex++;
+
+  if (typingIndex <= introText.length) {
+    setTimeout(typeEffect, 20);
+  }
+}
+
+typeEffect();
+
+// ===== CHANGING TEXT =====
+const changingText = document.getElementById("changing-text") as HTMLElement;
+
+const words = [
+  "Digital Marknadsförare",
+  "UX-nörd",
+  "idéspruta",
+  "konverteringsjunkie"
+];
+
+let wordIndex = 0;
+
+function changeText() {
+  if (!changingText) return;
+
+  changingText.style.opacity = "0";
+
+  setTimeout(() => {
+    changingText.textContent = words[wordIndex];
+    changingText.style.opacity = "1";
+    wordIndex = (wordIndex + 1) % words.length;
+  }, 200);
+
+  setTimeout(changeText, 2000);
+}
+
+changeText();

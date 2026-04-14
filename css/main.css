@@ -54,13 +54,13 @@ footer {
 }
 
 .right-side {
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .right-side img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-height: 70vh;
+    width: auto;
 }
 
 body {
@@ -500,6 +500,41 @@ form {
   max-width: 500px;
   border-radius: 12px;
   animation: fadeIn 0.3s ease;
+}
+
+.modal a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.modal a:hover {
+  background: grey;
+}
+
+.hero-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.hero-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#typing-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 @keyframes fadeIn {
