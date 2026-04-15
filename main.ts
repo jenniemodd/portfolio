@@ -7,6 +7,31 @@ const liveLink = document.getElementById("modal-live") as HTMLAnchorElement;
 const githubLink = document.getElementById("modal-github") as HTMLAnchorElement;
 const closeBtn = document.querySelector(".close") as HTMLElement;
 
+
+const facts = [
+  "Bosatt i Funäsdalen sedan 2021",
+  "Dogmom till en Golden Retriever 🐕",
+  "Mitt i en renovering av en 50-talsvilla",
+  "Testar på golf ⛳",
+  "Kanske en av de sista padelspelarna 😄",
+  "Ut på tur – aldrig sur!"
+];
+
+const factText = document.getElementById("fun-fact-text") as HTMLElement;
+const factBtn = document.getElementById("new-fact-btn") as HTMLButtonElement;
+
+function showRandomFact() {
+  const randomIndex = Math.floor(Math.random() * facts.length);
+  factText.textContent = facts[randomIndex];
+}
+
+// första laddning
+showRandomFact();
+
+// klick
+factBtn.addEventListener("click", showRandomFact);
+
+
 // ===== PROJECT CARDS =====
 const cards = document.querySelectorAll(".project-card");
 
@@ -46,6 +71,8 @@ const hero = document.querySelector(".hero-container");
 window.addEventListener("load", () => {
   hero?.classList.add("visible");
 });
+
+
 
 // ===== PARALLAX (optional, kan tas bort om du vill) =====
 const heroImage = document.querySelector(".right-side img") as HTMLElement;
