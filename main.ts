@@ -21,8 +21,16 @@ const factText = document.getElementById("fun-fact-text") as HTMLElement;
 const factBtn = document.getElementById("new-fact-btn") as HTMLButtonElement;
 
 function showRandomFact() {
-  const randomIndex = Math.floor(Math.random() * facts.length);
-  factText.textContent = facts[randomIndex];
+  if (!factText) return;
+
+  factText.style.opacity = "0";
+
+  setTimeout(() => {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    factText.textContent = facts[randomIndex];
+    factBtn.textContent = "Ge mig en till!";
+    factText.style.opacity = "1";
+  }, 200);
 }
 
 // första laddning
@@ -30,7 +38,6 @@ showRandomFact();
 
 // klick
 factBtn.addEventListener("click", showRandomFact);
-
 
 // ===== PROJECT CARDS =====
 const cards = document.querySelectorAll(".project-card");
