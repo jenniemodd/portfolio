@@ -93,26 +93,6 @@ if (heroImage) {
   });
 }
 
-// ===== TYPING EFFECT =====
-const typingText = document.getElementById("typing-text") as HTMLElement;
-
-const introText =
-  "Friluftsälskande norrlänning som drivs av att skapa digitala upplevelser – där webb, innehåll, strategi och resultat möts.";
-
-let typingIndex = 0;
-
-function typeEffect() {
-  if (!typingText) return;
-
-  typingText.textContent = introText.slice(0, typingIndex);
-  typingIndex++;
-
-  if (typingIndex <= introText.length) {
-    setTimeout(typeEffect, 20);
-  }
-}
-
-typeEffect();
 
 // ===== CHANGING TEXT =====
 const changingText = document.getElementById("changing-text") as HTMLElement;
