@@ -548,8 +548,14 @@ form {
 
 /* titel */
 #modal-title {
-  margin-top: 0;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  line-height: 1.2;
+  margin-bottom: 12px;
+
+  color: #111;
 }
 
 /* tech stack */
@@ -655,6 +661,20 @@ form {
 #new-fact-btn:hover {
     background: #444;
     transform: translateY(-2px);
+}
+
+.close {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+
+  border-radius: 50%;
+
+  background: #f5f5f5;
 }
 
 @keyframes blink {
