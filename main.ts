@@ -6,6 +6,8 @@ const tech = document.getElementById("modal-tech") as HTMLElement;
 const liveLink = document.getElementById("modal-live") as HTMLAnchorElement;
 const githubLink = document.getElementById("modal-github") as HTMLAnchorElement;
 const closeBtn = document.querySelector(".close") as HTMLElement;
+const modalImage = document.getElementById("modal-image") as HTMLImageElement;
+const modalAbout = document.getElementById("modal-about") as HTMLElement;
 
 
 const facts = [
@@ -45,6 +47,9 @@ const cards = document.querySelectorAll(".project-card");
 cards.forEach((card) => {
   card.addEventListener("click", () => {
     const el = card as HTMLElement;
+
+    modalImage.src = el.dataset.image || "";
+modalAbout.textContent = el.dataset.about || "";
 
     title.textContent = el.dataset.title || "";
     description.textContent = el.dataset.description || "";
