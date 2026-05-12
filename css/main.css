@@ -498,25 +498,79 @@ form {
 
 .modal-content {
   background: white;
-  padding: 30px;
-  max-width: 500px;
-  border-radius: 12px;
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 24px;
   animation: fadeIn 0.3s ease;
+
+  box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
 }
 
+/* länkar/knappar */
 .modal a {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 10px 15px;
-  background: black;
-  color: white;
-  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  margin-right: 12px;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+
+  transition: all 0.25s ease;
 }
 
+/* Live demo */
+#modal-live {
+  background: linear-gradient(135deg, #CD82C5, #b96db1);
+  color: white;
+}
+
+/* GitHub */
+#modal-github {
+  background: #f3f3f3;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+/* hover */
 .modal a:hover {
-  background: grey;
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
+/* titel */
+#modal-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* tech stack */
+#modal-tech {
+  display: inline-block;
+  margin-top: 8px;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* about text */
+#modal-about {
+  line-height: 1.8;
+  margin-top: 24px;
+  color: #444;
+}
+
+/* snygg scrollbar om texten blir lång */
+.modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 #modal-image {
@@ -525,7 +579,7 @@ form {
     object-fit: contain;
     border-radius: 16px;
     margin: 20px 0;
-    background: #ffffff
+    background: #ffffff;
     padding: 20px;
     box-sizing: border-box;
 }
