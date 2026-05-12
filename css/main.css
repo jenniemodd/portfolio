@@ -647,20 +647,26 @@ form {
 }
 
 #new-fact-btn {
-    border: none;
-    background: black;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 999px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  border: none;
+
+  background: linear-gradient(135deg, #CD82C5, #b96db1);
+  color: white;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
 }
 
 #new-fact-btn:hover {
-    background: #444;
-    transform: translateY(-2px);
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
 
 .close {
@@ -675,6 +681,31 @@ form {
   border-radius: 50%;
 
   background: #f5f5f5;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #CD82C5, #b96db1);
+  color: white;
+
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
 
 @keyframes blink {
