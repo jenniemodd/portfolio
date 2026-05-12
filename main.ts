@@ -46,14 +46,17 @@ const cards = document.querySelectorAll(".project-card");
 
 cards.forEach((card) => {
   card.addEventListener("click", () => {
-    const el = card as HTMLElement;
 
-    modalImage.src = el.dataset.image || "";
-modalAbout.textContent = el.dataset.about || "";
+ const el = card as HTMLElement;
 
-    title.textContent = el.dataset.title || "";
-    description.textContent = el.dataset.description || "";
-    tech.textContent = el.dataset.tech || "";
+modalImage.src = el.dataset.image || "";
+
+modalAbout.innerHTML =
+  (el.dataset.about || "").replace(/\n/g, "<br>");
+
+title.textContent = el.dataset.title || "";
+description.textContent = el.dataset.description || "";
+tech.textContent = el.dataset.tech || "";
 
     // Live länk (visa/dölj)
     if (el.dataset.live) {
