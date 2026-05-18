@@ -247,7 +247,7 @@ h4 {
 
 
 .portfolio-left {
-    width: 40%;
+    width: 45%;
 }
 
 .portfolio-left h2 {
@@ -255,18 +255,21 @@ h4 {
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .portfolio-left img {
     width: 100%;
+    max-width: 500px;
+
     height: auto;
     display: block;
-    border-radius: 4px;
-    max-width: 400px;
+
+    border-radius: 16px;
 }
 
 .portfolio-right {
-    width: 60%;
+    width: 55%;
 }
 
 .portfolio-right h3 {
@@ -825,6 +828,10 @@ nav a {
     background: white;
 
     box-shadow: none;
+}
+
+.portfolio-right h3 {
+    margin-top: 0px;
 }
 
 
