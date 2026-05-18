@@ -108,9 +108,9 @@ const changingText = document.getElementById("changing-text") as HTMLElement;
 
 const words = [
   "Digital Marknadsförare",
-  "UX-nörd",
+  "Strategisk kreatör",
   "idéspruta",
-  "konverteringsjunkie"
+  "Konverteringsjunkie"
 ];
 
 let wordIndex = 0;
