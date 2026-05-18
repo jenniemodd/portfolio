@@ -70,17 +70,15 @@ body {
 
 header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-
+    padding: 20px 0;
 }
 
 .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-top: 30px;;
 }
 
 .menu-container p {
@@ -627,19 +625,29 @@ form {
 }
 
 #new-fact-btn {
-  margin-top: 10px;
-  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 20px;
+  border-radius: 999px;
   border: none;
-  background: black;
+
+  background: linear-gradient(135deg, #CD82C5, #b96db1);
   color: white;
-  border-radius: 6px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 #new-fact-btn:hover {
-  background: grey;
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
-
 .fun-facts-box {
     background: #ffffff;
     border: 1px solid #e9e9e9;
@@ -654,8 +662,8 @@ form {
 }
 
 .fun-facts-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 12px 30px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
 
 .fun-facts-box h4 {
@@ -664,29 +672,6 @@ form {
     font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-#new-fact-btn {
-  border: none;
-
-  background: linear-gradient(135deg, #CD82C5, #b96db1);
-  color: white;
-
-  padding: 12px 20px;
-  border-radius: 999px;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition: all 0.25s ease;
-}
-
-#new-fact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
 
 .close {
@@ -728,6 +713,25 @@ form {
   box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
 
+input[type="submit"] {
+    border: none;
+   background: linear-gradient(135deg, #CD82C5, #b96db1);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 999px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
 @keyframes blink {
   50% { opacity: 0; }
 }
@@ -744,13 +748,23 @@ form {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 0px;
     }
 
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px 5px;
+        padding: 0;
+        margin: 0 auto;
+        margin-left: -25px;
+    }
+
+       .cv-button {
+        margin-top: 35px;
+    }
 
   nav a {
     font-size: 0.8rem;
@@ -767,37 +781,32 @@ form {
 header {
     padding: 16px;
 }
-    .bio-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+}
 
 
-    .work-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
+ .work-container {
+    flex-direction: column;
+    align-items: center;
+}
 
     .portfolio-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .contact-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
-    .left-side,
-    .right-side {
-        width: 100%;
-        padding: 20px;
-    }
+  .left-side,
+.right-side {
+    width: 100%;
+    padding: 10px 20px;
+}
 
     section ul {
         text-align: left;
@@ -818,12 +827,29 @@ header {
         margin: 0 auto;
         height: auto;
     }
+
+    .bio-right,
+.work-right,
+.portfolio-right,
+.contact-right {
+    text-align: left;
+}
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .contact-left img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 16px;
+    }
 }
 
 @media (max-width: 480px) {
 
     h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     p {

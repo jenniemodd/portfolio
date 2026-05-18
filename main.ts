@@ -11,12 +11,13 @@ const modalAbout = document.getElementById("modal-about") as HTMLElement;
 
 
 const facts = [
-  "Bosatt i Funäsdalen sedan 2021",
+  "Bosatt i Funäsdalen sedan 2021 ⛰️",
   "Dogmom till en Golden Retriever blandis 🐕",
-  "Mitt i en renovering av en 50-talsvilla",
+  "Mitt i en renovering av en 50-talsvilla 🏠",
   "Tog grönt kort i somras ⛳",
   "Kanske en av de sista padelspelarna 😄",
-  "Ut på tur, aldrig sur-person!"
+  "Ut på tur, aldrig sur-person! 🥾",
+  "Åkte vasaloppet i vintras! 🏅"
 ];
 
 const factText = document.getElementById("fun-fact-text") as HTMLElement;
