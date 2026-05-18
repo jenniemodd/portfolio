@@ -783,16 +783,19 @@ input[type="submit"]:hover {
         padding-top: 0px;
     }
 
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px 5px;
-        padding: 0;
-        margin: 0 auto;
-        margin-left: -25px;
-    }
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px 8px;
+
+    padding: 0;
+    margin: 0 auto;
+
+    max-width: 100%;
+}
 
        .cv-button {
         margin-top: 35px;
@@ -801,7 +804,7 @@ input[type="submit"]:hover {
   nav a {
     font-size: 0.8rem;
 
-    padding: 8px 14px;
+    padding: 8px 12px;
     border-radius: 999px;
 
     background: white;
