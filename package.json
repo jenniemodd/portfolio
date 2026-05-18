@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Medieinstitutet/fed25d-html-css-inl-1-portfolio-jenniemodd.git"
+    "url": "git+https://github.com/jenniemodd/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
-    "url": "https://github.com/Medieinstitutet/fed25d-html-css-inl-1-portfolio-jenniemodd/issues"
+    "url": "git+https://github.com/jenniemodd/portfolio.git"
   },
-  "homepage": "https://github.com/Medieinstitutet/fed25d-html-css-inl-1-portfolio-jenniemodd#readme",
+  "homepage": "https://github.com/jenniemodd/portfolio#readme",
   "devDependencies": {
     "vite": "^8.0.8"
   }
