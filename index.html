@@ -4,13 +4,16 @@
 
 <head>
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-THCSVWLK');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-THCSVWLK');</script>
+    <!-- End Google Tag Manager -->
 
     <meta name="author" content="Jennie Modd">
     <meta charset="UTF-8">
@@ -31,9 +34,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THCSVWLK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THCSVWLK" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="menu-container">
             <nav>
@@ -284,7 +287,7 @@ Det här projektet lärde mig mycket om DOM-manipulation, event listeners, array
                         <p>Rörosvägen 65<br>
                             846 72 Funäsdalen</p>
                     </address>
-                    <form>
+                    <form class="contact-form">
                         <fieldset>
                             <legend>Ta gärna kontakt! Just nu är studier min huvudsyssla men är öppen för uppdrag under
                                 eller efter studierna. Fyll i formuläret, eller skicka ett mail! </legend>
@@ -310,7 +313,7 @@ Det här projektet lärde mig mycket om DOM-manipulation, event listeners, array
                                 <textarea name="message" placeholder="Skriv ditt meddelande här"></textarea>
                             </label>
                             <label>
-                                <input type="submit" value="Skicka">
+                                <input type="submit" value="Skicka" class="contact-submit-btn" />
                             </label>
 
                         </fieldset>
