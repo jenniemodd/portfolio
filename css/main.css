@@ -57,6 +57,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .right-side img {
     max-height: 70vh;
@@ -447,7 +448,7 @@ form {
 }
 
 .project-card {
-    min-width: 300px;
+    min-width: 280px;
     background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
@@ -932,7 +933,6 @@ header {
         gap: 10px 5px;
         padding: 0;
         margin: 0 auto;
-        margin-left: -25px;
     }
 
 }
