@@ -1,135 +1,168 @@
 // ===== MODAL ELEMENT =====
+
 const modal = document.getElementById("project-modal") as HTMLElement;
 const title = document.getElementById("modal-title") as HTMLElement;
 const description = document.getElementById("modal-description") as HTMLElement;
 const tech = document.getElementById("modal-tech") as HTMLElement;
+
 const liveLink = document.getElementById("modal-live") as HTMLAnchorElement;
 const githubLink = document.getElementById("modal-github") as HTMLAnchorElement;
+
 const closeBtn = document.querySelector(".close") as HTMLElement;
+
 const modalImage = document.getElementById("modal-image") as HTMLImageElement;
 const modalAbout = document.getElementById("modal-about") as HTMLElement;
 
 
-const facts = [
-  "Bosatt i Funäsdalen sedan 2021 ⛰️",
-  "Dogmom till en Golden Retriever blandis 🐕",
-  "Mitt i en renovering av en 50-talsvilla 🏠",
-  "Tog grönt kort i somras ⛳",
-  "Kanske en av de sista padelspelarna 😄",
-  "Ut på tur, aldrig sur-person! 🥾",
-  "Åkte vasaloppet i vintras! 🏅"
-];
-
-const factText = document.getElementById("fun-fact-text") as HTMLElement;
-const factBtn = document.getElementById("new-fact-btn") as HTMLButtonElement;
-
-function showRandomFact() {
-  if (!factText) return;
-
-  factText.style.opacity = "0";
-
-  setTimeout(() => {
-    const randomIndex = Math.floor(Math.random() * facts.length);
-    factText.textContent = facts[randomIndex];
-    factBtn.textContent = "Ge mig en till!";
-    factText.style.opacity = "1";
-  }, 200);
-}
-
-// första laddning
-showRandomFact();
-
-// klick
-factBtn.addEventListener("click", showRandomFact);
-
 // ===== PROJECT CARDS =====
+
 const cards = document.querySelectorAll(".project-card");
 
 cards.forEach((card) => {
-  card.addEventListener("click", () => {
 
- const el = card as HTMLElement;
+    card.addEventListener("click", () => {
 
-modalImage.src = el.dataset.image || "";
+        const el = card as HTMLElement;
 
-modalAbout.innerHTML =
-  (el.dataset.about || "").replace(/\n/g, "<br>");
+        // Bild
+        modalImage.src = el.dataset.image || "";
 
-title.textContent = el.dataset.title || "";
-description.textContent = el.dataset.description || "";
-tech.textContent = el.dataset.tech || "";
+        // Om uppdraget / projektet
+        modalAbout.innerHTML =
+            (el.dataset.about || "").replace(/\n/g, "<br>");
 
-// Live länk (visa/dölj)
-if (el.dataset.live) {
-  liveLink.href = el.dataset.live;
-  liveLink.textContent = el.dataset.linktext || "Live demo";
-  liveLink.style.display = "inline-block";
-} else {
-  liveLink.style.display = "none";
-}
+        // Titel
+        title.textContent = el.dataset.title || "";
 
-// GitHub-länk (visa/dölj)
-if (el.dataset.github) {
-  githubLink.href = el.dataset.github;
-  githubLink.style.display = "inline-block";
-} else {
-  githubLink.style.display = "none";
-}
-  });
+        // Beskrivning
+        description.textContent = el.dataset.description || "";
+
+        // Teknik
+        tech.textContent = el.dataset.tech || "";
+
+
+        // ===== LIVE-LÄNK =====
+
+        if (el.dataset.live) {
+
+            liveLink.href = el.dataset.live;
+
+            liveLink.textContent =
+                el.dataset.linktext || "Live demo";
+
+            liveLink.style.display = "inline-block";
+
+        } else {
+
+            liveLink.style.display = "none";
+
+        }
+
+
+        // ===== GITHUB-LÄNK =====
+
+        if (el.dataset.github) {
+
+            githubLink.href = el.dataset.github;
+
+            githubLink.style.display = "inline-block";
+
+        } else {
+
+            githubLink.style.display = "none";
+
+        }
+
+
+        // Visa modal
+
+        modal.style.display = "flex";
+
+    });
+
 });
 
+
 // ===== CLOSE MODAL =====
+
 if (closeBtn) {
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
+
+    closeBtn.addEventListener("click", () => {
+
+        modal.style.display = "none";
+
+    });
+
 }
 
+
 // ===== HERO FADE-IN =====
+
 const hero = document.querySelector(".hero-container");
 
 window.addEventListener("load", () => {
-  hero?.classList.add("visible");
+
+    hero?.classList.add("visible");
+
 });
 
 
-
 // ===== HERO BILD =====
-const heroImage = document.querySelector(".right-side img") as HTMLElement;
+
+const heroImage =
+    document.querySelector(".right-side img") as HTMLElement;
 
 if (heroImage && window.innerWidth > 768) {
-  document.addEventListener("mousemove", (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 20;
-    const y = (e.clientY / window.innerHeight - 0.5) * 20;
 
-    heroImage.style.transform = `translate(${x}px, ${y}px)`;
-  });
+    document.addEventListener("mousemove", (e) => {
+
+        const x =
+            (e.clientX / window.innerWidth - 0.5) * 20;
+
+        const y =
+            (e.clientY / window.innerHeight - 0.5) * 20;
+
+        heroImage.style.transform =
+            `translate(${x}px, ${y}px)`;
+
+    });
+
 }
 
+
 // ===== CHANGING TEXT =====
-const changingText = document.getElementById("changing-text") as HTMLElement;
+
+const changingText =
+    document.getElementById("changing-text") as HTMLElement;
 
 const words = [
-  "Digital Marknadsförare",
-  "Strategisk kreatör",
-  "idéspruta",
-  "Konverteringsjunkie"
+    "Digital Marknadsförare",
+    "Strategisk kreatör",
+    "idéspruta",
+    "Konverteringsjunkie"
 ];
 
 let wordIndex = 0;
 
 function changeText() {
-  if (!changingText) return;
 
-  changingText.style.opacity = "0";
+    if (!changingText) return;
 
-  setTimeout(() => {
-    changingText.textContent = words[wordIndex];
-    changingText.style.opacity = "1";
-    wordIndex = (wordIndex + 1) % words.length;
-  }, 200);
+    changingText.style.opacity = "0";
 
-  setTimeout(changeText, 2000);
+    setTimeout(() => {
+
+        changingText.textContent =
+            words[wordIndex];
+
+        changingText.style.opacity = "1";
+
+        wordIndex =
+            (wordIndex + 1) % words.length;
+
+    }, 200);
+
+    setTimeout(changeText, 2000);
 }
 
 changeText();
