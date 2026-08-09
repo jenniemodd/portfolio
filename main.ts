@@ -59,18 +59,22 @@ title.textContent = el.dataset.title || "";
 description.textContent = el.dataset.description || "";
 tech.textContent = el.dataset.tech || "";
 
-    // Live länk (visa/dölj)
-    if (el.dataset.live) {
-      liveLink.href = el.dataset.live;
-      liveLink.style.display = "inline-block";
-    } else {
-      liveLink.style.display = "none";
-    }
+// Live länk (visa/dölj)
+if (el.dataset.live) {
+  liveLink.href = el.dataset.live;
+  liveLink.textContent = el.dataset.linktext || "Live demo";
+  liveLink.style.display = "inline-block";
+} else {
+  liveLink.style.display = "none";
+}
 
-    // GitHub länk
-    githubLink.href = el.dataset.github || "#";
-
-    modal.style.display = "flex";
+// GitHub-länk (visa/dölj)
+if (el.dataset.github) {
+  githubLink.href = el.dataset.github;
+  githubLink.style.display = "inline-block";
+} else {
+  githubLink.style.display = "none";
+}
   });
 });
 
