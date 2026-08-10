@@ -1150,7 +1150,7 @@ header {
 
      .bio-left {
         order: 2;
-        margin-top: 30px;
+        margin-top: 0.5rem;
     }
 
     .bio-left img {
