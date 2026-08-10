@@ -974,6 +974,10 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
 
+    .portfolio-label {
+        margin-top: 1rem;
+    }
+
     .scroll-hint {
         display: block;
         text-align: center;
