@@ -1143,12 +1143,21 @@ header {
         flex-direction: column;
     }
 
-    .bio-left {
-        order: 2;
-    }
 
     .bio-right {
         order: 1;
+    }
+
+     .bio-left {
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .bio-left img {
+        width: 280px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
     }
 
 }
