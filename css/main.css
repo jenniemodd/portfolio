@@ -979,10 +979,9 @@ input[type="submit"]:hover {
         padding-top: 1rem;
     }
 
-      .projects-section {
-        margin-top: -1rem;
+     .projects-container {
+        padding-top: 1rem;
     }
-
     .cv-button {
     margin-top: 2rem;
 }
