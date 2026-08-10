@@ -974,11 +974,10 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
 
-    .bio-section
-    .service-section
+   .bio-section,
+    .service-section,
     .projects-section {
-    padding-top: 1rem;
-
+        padding-top: 1rem;
     }
 
     .cv-button {
