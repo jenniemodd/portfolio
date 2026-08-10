@@ -974,6 +974,11 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
 
+    .bio-section {
+    padding: 1rem;
+
+    }
+
     .service-section {
     padding-top: 1rem;
 }
