@@ -952,6 +952,12 @@ input[type="submit"]:hover {
     margin-top: 15px;
 }
 
+.service-section {
+    background-color: #f5f1f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
 @keyframes blink {
   50% { opacity: 0; }
 }
