@@ -975,7 +975,7 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
 
     .service-section {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
     .cv-button {
@@ -1100,8 +1100,6 @@ header {
 .contact-right {
     text-align: left;
 }
-
-
     .contact-left {
         width: 100%;
     }
