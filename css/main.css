@@ -974,6 +974,10 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
 
+    .cv-button {
+    margin-top: 2rem;
+}
+
     .scroll-hint {
         display: block;
         text-align: center;
