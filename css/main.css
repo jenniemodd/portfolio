@@ -1175,8 +1175,8 @@ header {
 
     .bio-left img {
         width: 300px;
-          max-width: 80vw;
-        margin: 0 auto;
+        max-width: 80vw;
+        margin-top: 0.5rem;
         display: block;
     }
 
