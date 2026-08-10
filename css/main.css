@@ -1095,7 +1095,8 @@ header {
 
     .bio-right,
 .work-right,
-.portfolio-right {
+.portfolio-right,
+.projects-section {
     text-align: center;
 }
 
