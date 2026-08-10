@@ -975,9 +975,12 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
 
    .bio-section,
-    .service-section,
-    .projects-section {
+    .service-section {
         padding-top: 1rem;
+    }
+
+      .projects-section {
+        margin-top: -1rem;
     }
 
     .cv-button {
