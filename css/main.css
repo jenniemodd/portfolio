@@ -1093,10 +1093,14 @@ header {
 
     .bio-right,
 .work-right,
-.portfolio-right,
-.contact-right {
+.portfolio-right {
     text-align: center;
 }
+
+.contact-right {
+    text-align: left;
+}
+
 
     .contact-left {
         width: 100%;
