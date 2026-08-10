@@ -1123,11 +1123,22 @@ header {
     display: block;
 }
 
-    .project-scroll .project-card {
-        flex: 0 0 min(480px, 85vw);
-        max-width: 480px;
+     .project-scroll {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        overflow-x: visible;
+        scroll-snap-type: none;
     }
-    
+
+    .project-scroll .project-card {
+        width: 100%;
+        max-width: 480px;
+        min-width: 0;
+        margin: 0 auto;
+    }
+
+
 .services-grid {
 
     grid-template-columns: 1fr;
