@@ -1128,6 +1128,20 @@ header {
     padding: 24px;
 
 }
+
+    .bio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio-left {
+        order: 1;
+    }
+
+    .bio-right {
+        order: 2;
+    }
+
 }
 
 
