@@ -450,6 +450,7 @@ form {
 .project-card {
     min-width: 300px;
     background: #ffffff;
+    border: 1px solid #e5dce5;
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
@@ -457,7 +458,7 @@ form {
     transition: all 0.3s ease;
     scroll-snap-align: start;
 
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 
     padding-bottom: 24px;
 }
@@ -499,11 +500,11 @@ form {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .projects-section {
-    background: #f6f6f6;
+    background: #ffffff;
 }
 
 .modal {
@@ -781,8 +782,8 @@ input[type="submit"]:hover {
 ========================================== */
 
 .services-title {
-    margin-top: 70px;
-    margin-bottom: 35px;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 /* Grid */
@@ -953,9 +954,13 @@ input[type="submit"]:hover {
 }
 
 .service-section {
-    background-color: #f5f1f5;
     padding: 80px 20px;
     text-align: center;
+}
+
+.service-section > div {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 @keyframes blink {
