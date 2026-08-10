@@ -1123,6 +1123,12 @@ header {
     display: block;
 }
 
+ .project-card {
+        width: 100%;
+        max-width: 480px;
+        min-width: 0;
+    }
+
 .services-grid {
 
     grid-template-columns: 1fr;
