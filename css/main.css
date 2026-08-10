@@ -1123,12 +1123,11 @@ header {
     display: block;
 }
 
- .project-card {
-        width: 100%;
+    .project-scroll .project-card {
+        flex: 0 0 min(480px, 85vw);
         max-width: 480px;
-        min-width: 0;
     }
-
+    
 .services-grid {
 
     grid-template-columns: 1fr;
