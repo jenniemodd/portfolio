@@ -1135,11 +1135,11 @@ header {
     }
 
     .bio-left {
-        order: 1;
+        order: 2;
     }
 
     .bio-right {
-        order: 2;
+        order: 1;
     }
 
 }
